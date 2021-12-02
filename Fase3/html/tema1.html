@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            text-align: justify;
+            list-style-type: none;
+        }
+
+        #wrapper {
+            text-align: center;
+            margin: auto;
+            width: 99%;
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        #header {
+            background-color: #06fbca;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 1em;
+
+            align-content: center;
+            display: block;
+            flex-basis: 100%;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        #header h1 {
+            text-shadow: 2px 2px #02010a;
+        }
+
+        #header nav {
+            display: inline-block;
+            padding: 1em;
+            text-align: center;
+
+            flex-basis: 30%;
+        }
+
+        #header nav li {
+            display: inline-block;
+        }
+
+        #header nav a {
+            color: black;
+            padding: 0.5em;
+            text-transform: capitalize;
+        }
+
+        main {
+            background-color: yellow;
+            color: black;
+            padding: 1em;
+
+            align-content: center;
+            display: block;
+            flex-basis: 100%;
+            flex-flow: row wrap;
+            justify-content: space-between;
+
+            text-align: center;
+            margin: auto;
+            width: 99%;
+        }
+
+        #cuerpo {
+            background-color: #06fbca;
+            color: black;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 1em;
+
+            align-content: center;
+            display: block;
+            flex-basis: 100%;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        #cuerpo h3,
+        p,
+        article {
+            padding-top: 2em;
+        }
+
+        #cuerpo li {
+            padding: 1em;
+        }
+
+        footer {
+            background-color: #06fbca;
+            color: black;
+            padding: 1em;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            align-content: center;
+            justify-content: space-between;
+            text-align: center;
+            margin: auto;
+            width: 99%;
+            display: flex;
+        }
+
+        #mail,
+        #social,
+        #rights {
+            padding-top: 1em;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+
+        #mail ul,
+        #social ul,
+        #rights ul {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 0;
+            padding-left: 2px;
+        }
+
+        #mail a,
+        #social a,
+        #rights a {
+            color: black;
+        }
+
+        #mail ul+ul,
+        #social ul+ul,
+        #rights ul+ul {
+            padding-left: 1em;
+        }
+
+        img {
+            width: 30%;
+            height: 50%;
+            display: block;
+            margin: auto;
+        }
+    </style>
+    <title>Flex Box</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!--      Encabezado de la pagina    -->
+        <header id="header">
+            <h1>Introducción a HTML: Flex Box</h1>
+            <!--      Menú de navegación    -->
+            <nav>
+                <ul>
+                    <li><a href="/Fase3/index.html" class="main1">Inicio</a></li>
+                    <li><a href="/Fase3/html/tema1.html" class="main2">Flex Box</a></li>
+                    <li><a href="/Fase3/html/tema2.html" class="main3">Listas</a></li>
+                    <li><a href="/Fase3/html/tema3.html" class="main4">Enlaces</a></li>
+                    <li><a href="/Fase3/html/recurso1.html" class="main5">Recurso Digital 1</a></li>
+                    <li><a href="/Fase3/html/recurso2.html" class="main6">Recurso Digital 2</a></li>
+                    <li><a href="aprendizaje" class="main7">Aprendizaje</a>
+                        <ul>
+                            <li><a href="aprendizaje1" class="main7.1">Aprendizaje1</a></li>
+                            <li><a href="aprendizaje2" class="main7.2">Aprendizaje2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/Fase3/html/autor.html" class="main8">Autor</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!---      Seccion del propósito del sitio    -->
+    <main>
+        <section id="cuerpo">
+            <article>
+                <h3>Flex Box</h3>
+                <p>
+                    El <i>Flex Box</i> es una propiedad de CSS display, el cual nos permite maquinar nuestras paginas
+                    web en una forma más fácil y sencilla distintas como sr hacian en tiempos anteriores. Se le llama
+                    Flex porque se tiene un contenedor que contiene la propiedad <i>display: flex</i>.
+                </p>
+                <br>
+                <img src="/Fase3/img/FlexBox.png" alt="Imagen de Flex Box"><br>
+                <cite>File:Exemplos de Flexbox.png. (s/f). Wikimedia.org. Recuperado el 19 de septiembre de 2021, de <a
+                        href="https://commons.wikimedia.org/wiki/File:Exemplos_de_Flexbox.png">https://commons.wikimedia.org/wiki/File:Exemplos_de_Flexbox.png</a></cite>
+                <p>
+                    En este contenedor vamos a poder especificar, una alineación de los elementos que se encuentra
+                    dentro de este contenedor
+                    un tamaño que contiene y que pueda distribuir un espacion restante que hay entre los elementos de
+                    nuestro contenedor.
+                </p>
+                <ul>
+                    <li>
+                        Se puede hacer distintos diseños flexibles que utilicen menos código fuente, estos nos permiten
+                        optimizar nuestro código y nuestro sitio web.
+                    </li>
+                    <li>
+                        Se puede alinear los elementos en una sola dirección, ya sea horizontal o vertical, con esta
+                        alineación nos ayudara a distribuir nuestros elementos sin que coloquemos nada dentro de ellos.
+                    </li>
+                    <li>
+                        Se puede reordenar los contenidos sin tocar nuestro código fuente (HTML), el cual nos permitirá
+                        optimizar nuestra página web.
+                    </li>
+                </ul>
+                <br>
+                <img src="/Fase3/img/direccionflexbox.jpg" alt="Imagen de Flex Box"><br>
+                <cite>File:Direccion de los Ejes. (s/f). Platzi.com. Recuperado el 16 de octubre de 2021, de <a
+                        href="https://platzi.com/blog/flexbox-explicado-con-manzanitas/?utm_source=google&utm_medium=cpc&utm_campaign=12915366154&utm_adgroup=&utm_content=&gclid=CjwKCAjw8KmLBhB8EiwAQbqNoDu1uk8N88wdEH_wZRO8yY5FHgvKhmO-9PoCOTDjqw8d6Oo1TfsMWBoC5v8QAvD_BwE&gclsrc=aw.ds">https://platzi.com/blog/flexbox-explicado-con-manzanitas/?utm_source=google&utm_medium=cpc&utm_campaign=12915366154&utm_adgroup=&utm_content=&gclid=CjwKCAjw8KmLBhB8EiwAQbqNoDu1uk8N88wdEH_wZRO8yY5FHgvKhmO-9PoCOTDjqw8d6Oo1TfsMWBoC5v8QAvD_BwE&gclsrc=aw.ds</a></cite>
+
+                </p>
+            </article>
+        </section>
+    </main>
+    <!--      Pie de pagina    -->
+
+    <footer>
+        <div id="mail">
+            <h3>Contacto</h3>
+            <ul>
+                <li><a href="malito:nebolanob@unadvirtual.edu.co">nebolanob@unadvirtual.edu.co</a></li>
+            </ul>
+        </div>
+        <div id="social">
+            <h3>Redes Sociales</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/UniversidadUNAD/">Facebook</a></li>
+                <li><a href="Skype:live:neyderbol">Skype</a></li>
+            </ul>
+        </div>
+        <div id="rights">
+            <h3>Derechos</h3>
+            <span>Neyder Bolaño &COPY;2021</span>
+        </div>
+    </footer>
+</body>
+
+</html>

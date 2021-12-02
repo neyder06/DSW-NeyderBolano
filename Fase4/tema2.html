@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tema 2</title>
+</head>
+
+<body>
+    <header id="header">
+        <!--      Encabezado de la pagina    -->
+        <h1>Introducción a HTML: Enlaces</h1>
+        <!--      Menú de navegación    -->
+        <nav class="menu">
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Temas</a>
+                    <ul class="nav-submenu">
+                        <li><a href="tema1.html">Flex Box</a></li>
+                        <li><a href="tema2.html">Enlaces</a></li>
+                        <li><a href="tema3.html">Listas</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Recursos Digitales</a>
+                    <ul class="nav-submenu">
+                        <li><a href="recurso1.html">Recurso Digital 1</a></li>
+                        <li><a href="recurso2.html">Recurso Digital 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="main7">Aprendizaje</a>
+                    <ul class="nav-submenu">
+                        <li><a href="aprendizaje1.html">Evaluación 1</a></li>
+                        <li><a href="aprendizaje2.html" >Evaluación 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="autor.html">Autor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!---      Seccion del propósito del sitio    -->
+    <main>
+        <section id="cuerpo">
+            <article>
+                <h3>Enlaces</h3>
+                <p>
+                    Los <i>Enlaces</i> es la que se encarga de comunicar distintos documentos en la web por medio de
+                    Hipervinculos (links o enlaces).<br>
+                    En HTML los enlace se marcan por medio de la etiqueta <strong>&lt;a&gt;&lt;/a&gt;</strong> y su
+                    atributo principal es <strong>href=""</strong>.
+                    El href="", es donde se escribe la ruta y este se puede clasificar en dos tipos. <br><br>
+                    <img src="img/Enlaces.png" alt="Imagen de Enlaces" width="28%" height="15%"><br>
+                    <cite>File:Scielo enlaces externos.png. (s/f). Wikimedia.org. Recuperado el 19 de septiembre de
+                        2021, de <a
+                            href="https://commons.wikimedia.org/wiki/File:Scielo_enlaces_externos.png">https://commons.wikimedia.org/wiki/File:Scielo_enlaces_externos.png</a></cite>
+                <ul>
+                    <li>Rutas absolutas:</li>
+                    <p>
+                        Estas definen la ubicación completa del archivo en la web y empienzan apartir del
+                        https://nombredelsitio.dominio/archivo.dominio. <br>
+                        Un ejemplo claro es la pagina de la UNAD que sería como:<br>
+                        &lt;a href="https://www.unad.edu.co/">Esta en la pagina de la UNAD&lt;/a&gt;
+                    </p><br>
+                    <li>Rutas Relativas</li>
+                    <p>
+                        Esta ruta es la que define la ubicación del archivo de destino que se encuentran en la misma
+                        carpeta, un ejemplo sería asi: <br>
+                        &lt;a href="temadentrodelacarpeta.html">Este es el otro tema en relación de esta
+                        pagina&lt;/a&gt;
+                    </p>
+                </ul>
+                </p>
+                <p>Existen varios tipos de enlaces en los cuales se encuentran los: <br>
+                <ul>
+                    <li>Enlaces internos entre archivos, los cuales son de tipo de ruta relativa.</li>
+                    <li>Enlaces externos, los cuales son de tipo de ruta absoluta en el que se direcciona el usuario a
+                        otra pagina externa direfente a la nuestra.</li>
+                    <li>Enlaces internos: anclas, en esta se direcciona dentro de la misma pagina, es decir, lleva a un
+                        punto especifico del documento.</li>
+                    <li>Enlaces para ampliar imagenes, es cuando se coloca una imagen pequeña en el cual se coloca el
+                        enlace que al darle clic la amplia.</li>
+                    <li>Enlace para descargas, segun la extención del archivo este nos puede llevar, ya sea a una
+                        archivo como por ejemplo: html, jpg, png, gif, svg, pdf, etc.
+                        O si es un comprimido le da la opción de descargarlo
+                    </li>
+                    <li>Enlaces a una dirección de correo electronico, se abre el programa de correo determinado, que
+                        pueden ser el Gmail o Hotmail.</li>
+                </ul>
+                </p><br>
+            </article>
+        </section>
+    </main>
+    <!--      Pie de pagina    -->
+    <footer>
+        <div id="pie">
+            <div id="mail">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="malito:nebolanob@unadvirtual.edu.co">nebolanob@unadvirtual.edu.co</a></li>
+                </ul>
+            </div>
+            <div id="social">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/UniversidadUNAD/">Facebook</a></li>
+                    <li><a href="Skype:live:neyderbol">Skype</a></li>
+                </ul>
+            </div>
+            <div id="rights">
+                <h3>Derechos</h3>
+                <span>Neyder Bolaño &COPY;2021</span>
+        </div>
+    </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+ * {
+    margin-top: 4px;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: justify;
+    list-style-type: none;
+}
+
+#header {
+    background-color: #3585ED;
+    color: #CBE86B;
+
+    align-content: center;
+    display: block;
+    flex-basis: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    width: 99%;
+    padding: auto;
+}
+
+#header h1{
+    text-align: center;
+}
+
+.menu {
+    width: auto;
+    margin: 10px auto;
+    padding: 1em;
+}
+
+.menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-menu>li {
+    position: relative;
+    display: inline-block
+    
+}
+
+.nav-menu>li>a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu li a:hover {
+    color: #ffffff;
+}
+
+.nav-submenu {
+    position: absolute;
+    background: #0D34D0;
+    width: 130%;
+    visibility: hidden;
+}
+
+.nav-submenu li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.nav-menu li:hover .nav-submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+main {
+    background-color: white;
+
+    align-content: center;
+    display: block;
+    flex-basis: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    text-align: center;
+    margin: auto;
+    width: 99%;
+}
+
+#cuerpo {
+    background-color: #06fbca;
+    color: black;
+    padding: 1em;
+
+    align-content: center;
+    display: block;
+    flex-basis: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#cuerpo h3, h4, p, article {
+    padding-top: 2em;
+}
+
+#cuerpo li {
+    padding: 1em;
+}
+
+footer {
+    background-color: white;
+
+    align-content: center;
+    display: block;
+    flex-basis: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    text-align: center;
+    margin-top: 10px;
+    width: 99%;
+}
+#pie{
+    background-color: #3585ED;
+    color: black;
+
+    align-content: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    width: 99%;
+    display: flex;
+    padding-top: em;
+}
+    
+#mail,
+#social,
+#rights {
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#mail ul,
+#social ul,
+#rights ul {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    padding-left: 2px;
+}
+
+#mail a,
+#social a,
+#rights a {
+    color: black;
+}
+
+#mail ul+ul,
+#social ul+ul,
+#rights ul+ul {
+    padding-left: 1em;
+}
+
+img {
+    width: 30%;
+    height: 50%;
+    display: block;
+    margin: auto;
+}
+
+.contenedor {
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contenedor2 {
+    margin: 0;
+    width: 30%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contenedor div {
+    box-sizing: border-box;
+    min-width: 50px;
+}
+
+.bloque1 {
+    color: #ddd;
+    background-color: #FF0000;
+    min-height: 200px;
+    width: 100%;
+}
+
+.bloque2 {
+    color: #333;
+    background-color: darkorange;
+    min-height: 600px;
+    width: 20%;
+}
+
+.bloque3 {
+    color: #333;
+    background-color: blue;
+    min-height: 600px;
+    width: 50%;
+}
+
+.bloque4 {
+    color: #333;
+    background-color: #FFFF00;
+    min-height: 50px;
+    width: 100%;
+}
+
+.bloque5 {
+    color: #ddd;
+    background-color: #000000;
+    min-height: 50px;
+    width: 100%;
+}
+
+@media all and (max-width: 900px) and (min-width:700px) {
+    .contenedor {
+        width: 90%;
+    }
+
+    .bloque1 {
+        width: 100%;
+    }
+
+    .bloque2 {
+        width: 20%;
+        min-height: 400px;
+    }
+
+    .bloque3 {
+        width: 80%;
+        min-height: 400px;
+    }
+
+    .contenedor2 {
+        width: 100%;
+    }
+
+    .bloque4 {
+        width: 50%;
+        min-height: 300px;
+    }
+
+    .bloque5 {
+        width: 50%;
+        min-height: 300px;
+    }
+}
+
+@media all and (max-width: 700px) and (min-width:480px) {
+    .contenedor {
+        width: 100%;
+    }
+
+    .bloque1 {
+        width: 20%;
+        order: 3;
+    }
+
+    .bloque2 {
+        width: 100%;
+        min-height: 100px;
+        order: 1;
+    }
+
+    .bloque3 {
+        width: 100%;
+        min-height: 400px;
+        order: 2;
+    }
+
+    .contenedor2 {
+        width: 80%;
+        order: 4;
+    }
+
+    .bloque4 {
+        width: 100%;
+        min-height: 150px;
+    }
+
+    .bloque5 {
+        width: 100%;
+        min-height: 150px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .contenedor {
+        width: 100%;
+    }
+
+    .bloque1 {
+        width: 100%;
+        order: 4;
+    }
+
+    .bloque2 {
+        width: 100%;
+        min-height: 100px;
+        order: 1;
+    }
+
+    .bloque3 {
+        width: 100%;
+        min-height: 400px;
+        order: 2;
+    }
+
+    .contenedor2 {
+        width: 100%;
+        order: 3;
+    }
+
+    .bloque4 {
+        width: 100%;
+        min-height: 150px;
+    }
+
+    .bloque5 {
+        width: 100%;
+        min-height: 150px;
+    }
+} 
